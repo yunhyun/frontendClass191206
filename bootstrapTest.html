@@ -7,8 +7,9 @@
     <!-- 예제 소스에 있는 style.css 파일을 가져와야 함. 배경 그림, div에 적용한 클래스 들이 모두 들어있음.  -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CSS 아래 링크주소를 써도 되고 css 폴더에 있는 부트스트랩 파일 써도 됨. -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <title>부트스트랩연습</title>
   </head>
   <body>
@@ -63,24 +64,68 @@
         </div>
     </div>
 
-    <!-- 세번째 섹션 -->
-    <div class="box-padding-big grey-bg">
-        <h1>세번째 섹션</h1>
+    <!-- 세번째 섹션 왼쪽 5개, 오른쪽 7개 컬럼. 모바일이하 크기에서는 안보임(d-none d-md-block을 추가하면 모바일 버전에서는 아예 나오지 않음 ) -->
+    <div class="d-none d-md-block box-padding-big grey-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 info-big">
+                    <h1>세번째 섹션</h1>
+                    <h2>Support for<br><strong>Responsive projects</strong></h2>
+                    <p>Projects added to Symu are automatically checked whether they are mobile ready.</p>
+                    <p>The program will divide your files into responsive versions on its own! You have the option to view the projects in either normal or responsive modes!</p>
+                </div>
+                <div class="col-md-7">
+                    <img src="images/home-panel-3.jpg">
+                </div>
+            </div>
+        </div>	
     </div>
 
-    <!-- 네번째 섹션 -->
-    <div class="box-padding-big white-bg">
-        <h1>네번째 섹션</h1>
+    <!-- 네번째 섹션 왼쪽 오른쪽 6개 컬럼. 이미지 왼쪽 텍스트 오른쪽 표시를 위해 플로팅-->
+    <div class="d-none d-md-block box-padding-big white-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/envelope-icon.jpg" style="float:left">  
+                    <h2 class="icon-title">Email<br><strong>notifications</strong></h2>
+                    <p>An email notification will be sent when your client comments or opens a project. You will know when a client recieves the projects and if he has seen it!</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/lock-icon.jpg" style="float:left">　　
+                    <h2 class="icon-title">Project<br><strong>protection</strong></h2>
+                    <p>Your projects will be perfectly safe, Symu uses SSL encryption and every project added receives a unique link. Additionally you have the option to secure your project with a password.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- 다섯번째 섹션 -->
-    <div class="box-padding-big dark-bg-stat">
-        <h1>다섯번째 섹션</h1>
+    <!-- 다섯번째 섹션 좌, 우에 2컬럼 두개씩, 가운데 4컬럼 -->
+    <div class="d-none d-md-block box-padding-big dark-bg-stat">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h1>다섯번째 섹션</h1>
+                </div>
+                <div class="col-md-2">
+                    <h1>다섯번째 섹션</h1>
+                </div>
+                <div class="col-md-4 align-center">
+                    <h1>다섯번째 섹션</h1>
+                </div>
+                <div class="col-md-2">
+                    <h1>다섯번째 섹션</h1>
+                </div>
+                <div class="col-md-2">
+                    <h1>다섯번째 섹션</h1>
+                </div>
+            </div>
+        </div>
     </div>
     
     <!-- 푸터 -->
     <div class="footer">
         <h1>푸터</h1>
+        The site owner is not responsible for uploaded images. You can only upload images for which you own the copyright.
     </div>
 
     <!-- Optional JavaScript -->
